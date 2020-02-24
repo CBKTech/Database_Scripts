@@ -1,0 +1,27 @@
+drop table if exists company;
+
+create table company
+(
+company_id   smallint    unsigned not null auto_increment,
+company_id_companyname varchar (100) not null,
+company_id_primarycontactfirstname varchar(32) not null,
+company_id_primarycontactlastname varchar(32) not null,
+company_id_address varchar(50) not null,
+company_id_address2 varchar(50),
+company_id_city varchar(50) not null,
+company_id_state varchar(50) not null,
+company_id_zip MEDIUMINT(5) ZEROFILL,
+company_id_phone varchar(40) CHARACTER SET ascii not null,
+company_id_primarycontactemail varchar(320) not null,
+company_id_smstextnumber varchar(40) CHARACTER SET ascii not null,
+company_id_latitude decimal(10,8) not null,
+company_id_longitude decimal(11,8)not null,
+company_id_active bit not null default 0,
+
+primary key (company_id)
+)
+charset utf8
+collate utf8_unicode_ci
+;
+ 
+

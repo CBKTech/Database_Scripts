@@ -1,0 +1,39 @@
+
+
+drop table if exists locationsymbols;
+
+create table locationsymbols
+(
+locationsymbols_id   smallint    unsigned not null auto_increment,
+locationsymbols_id_abbr varchar(8),
+locationsymbols_id_name varchar(32) not null,
+primary key (locationsymbols_id)
+)
+charset utf8
+collate utf8_unicode_ci
+;
+ 
+insert into locationsymbols
+values
+(NULL, '1', 'Arm'),
+(NULL, '2', 'Bottom'),
+(NULL, '3', 'Corner'),
+(NULL, '4', 'Front'),
+(NULL, '5', 'Left'),
+(NULL, '6', 'Leg'),
+(NULL, '7', 'Rear'),
+(NULL, '8', 'Right'),
+(NULL, '9', 'Side'),
+(NULL, '10', 'Top'),
+(NULL, '11', 'Veneer'),
+(NULL, '12', 'Edge'),
+(NULL, '13', 'Center'),
+(NULL, '14', 'Inside'),
+(NULL, '15', 'Outside'),
+(NULL, '16', 'Seat'),
+(NULL, '17', 'Drawer'),
+(NULL, '18', 'Door'),
+(NULL, '19', 'Shelf')
+
+
+;

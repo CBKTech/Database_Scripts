@@ -1,0 +1,15 @@
+drop table if exists movecompleted;
+
+create table movecompleted
+(
+movecompleted_id   smallint    unsigned not null auto_increment,
+movecompleted_id_company_id int (8) not null,
+movecompleted_id_moverecord_id int (8) not null,
+movecompleted_id_signature blob not null,
+primary key (movecompleted_id)
+)
+charset utf8
+collate utf8_unicode_ci
+;
+ 
+

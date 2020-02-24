@@ -1,0 +1,24 @@
+drop table if exists vehicle;
+
+create table vehicle
+(
+vehicle_id   smallint    unsigned not null auto_increment,
+vehicle_id_company_id int(8) not null,
+vehicle_id_vehicletype varchar(50) not null,
+vehicle_id_vehicletag varchar(50),
+vehicle_id_startmillage int(7) not null,
+vehicle_id_pmmillagecheck int(5) not null,
+vehicle_id_currentmillage int(7),
+vehicle_id_totalcubicsize int(7) not null,
+vehicle_id_active bit not null default 0,
+vehicle_id_pmservice bit not null default 0,
+vehicle_id_outofservice bit not null default 0,
+vehicle_id_outofservicestartdate date,
+vehicle_id_returntoservicedate date,
+primary key (vehicle_id)
+)
+charset utf8
+collate utf8_unicode_ci
+;
+ 
+

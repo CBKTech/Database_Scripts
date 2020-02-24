@@ -1,0 +1,41 @@
+
+
+drop table if exists exceptionsymbols;
+
+create table exceptionsymbols
+(
+exceptionsymbols_id   smallint    unsigned not null auto_increment,
+exceptionsymbols_id_abbr varchar(8),
+exceptionsymbols_id_name varchar(32) not null,
+primary key (exceptionsymbols_id)
+)
+charset utf8
+collate utf8_unicode_ci
+;
+ 
+insert into exceptionsymbols
+values
+(NULL, 'BE', 'Bent'),
+(NULL, 'BR', 'Broken'),
+(NULL, 'BU', 'Burned'),
+(NULL, 'CH', 'Chipped'),
+(NULL, 'CU', 'Content & Condition Unknown'),
+(NULL, 'CR', 'Crushed'),
+(NULL, 'D', 'Dented'),
+(NULL, 'F', 'Faded'),
+(NULL, 'G', 'Gouged'),
+(NULL, 'L', 'Loose'),
+(NULL, 'M', 'Marred'),
+(NULL, 'MCU', 'Mechanical Condition Unknown'),
+(NULL, 'MO', 'Motheaten'),
+(NULL, 'R', 'Rubbed'),
+(NULL, 'RU', 'Rusted'),
+(NULL, 'SC', 'Scratched'),
+(NULL, 'SH', 'Short'),
+(NULL, 'SO', 'Soiled'),
+(NULL, 'T', 'Torn'),
+(NULL, 'W', 'Badly worn'),
+(NULL, 'WD', 'Water damaged'),
+(NULL, 'Z', 'Cracked')
+
+;

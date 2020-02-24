@@ -1,0 +1,48 @@
+drop table if exists movverecord;
+
+create table moverecord
+(
+moverecord_id   smallint    unsigned not null auto_increment,
+moverecord_id_company_id int (8) not null,
+moverecord_id_customerfirstname varchar(32) not null,
+moverecord_id_customerlastname varchar(32) not null,
+moverecord_id_customerphone varchar(40) CHARACTER SET ascii not null,
+moverecord_id_customerprimarycontactemail varchar(320) not null,
+moverecord_id_customersmstextnumber varchar(40) CHARACTER SET ascii not null,
+moverecord_id_startaddress varchar(50) not null,
+moverecord_id_startaddress2 varchar(50),
+moverecord_id_startcity varchar(50) not null,
+moverecord_id_startstate varchar(50) not null,
+moverecord_id_startzip MEDIUMINT(5) ZEROFILL,
+moverecord_id_startlatitude decimal(10,8) not null,
+moverecord_id_startlongitude decimal(11,8)not null,
+moverecord_id_destinationaddress varchar(50) not null,
+moverecord_id_destinationaddress2 varchar(50),
+moverecord_id_destinationcity varchar(50) not null,
+moverecord_id_destinationstate varchar(50) not null,
+moverecord_id_destinaionzip MEDIUMINT(5) ZEROFILL,
+moverecord_id_destinationlatitude decimal(10,8) not null,
+moverecord_id_destinationlongitude decimal(11,8)not null,
+moverecord_id_storagelocationflag_id bit not null default 0,
+moverecord_id_storagelatitude decimal(10,8),
+moverecord_id_storagelongitude decimal(11,8),
+moverecord_id_movebegin_date date not null,
+moverecord_id_moveend_date date not null,
+moverecord_id_move_starttime time not null,
+moverecord_id_move_endtime time not null,
+moverecord_id_storagebegin_date date,
+moverecord_id_storageend_date date,
+moverecord_id_agent varchar(50),
+moverecord_id_military varchar(50),
+moverecord_id_carrierordernumber varchar(50),
+moverecord_id_contract_gbl_no varchar(50),
+moverecord_id_govserviceorderno varchar(50),
+moverecord_id_active bit not null default 0,
+
+primary key (moverecord_id)
+)
+charset utf8
+collate utf8_unicode_ci
+;
+ 
+
